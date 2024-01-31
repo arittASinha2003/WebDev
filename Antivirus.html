@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<h2>Example for Event handling with radio buttons</h2>
+
+
+<script>
+
+function choice(cost)
+
+{
+
+ 
+	switch(cost)
+	
+	{
+	
+	case 50:
+alert("you have selected antivirus of cost 	50$");
+	
+	break;
+
+	
+	case 100:
+alert("you have selected antivirus of cost 	100$");
+	
+	break;
+
+	
+	case 150:
+alert("you have selected antivirus of cost 	150$");
+	
+	break;
+	
+
+	default:
+alert("error---");
+	
+	break;
+
+	
+	}
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<h2>Buy Antivirus online.</h2>
+<hr/>
+
+<form>
+
+<p><input type="radio" name="a" onclick="choice(50)"/>
+<label>Antivirus version 1.2</label>
+<br />
+
+
+
+<input type="radio" name="a" onclick="choice(100)"/>
+<label>Antivirus version 1.4</label><br />
+
+
+<input type="radio" name="a" onclick="choice(150)"/>
+<label>
+Antivirus version 1.6</label>
+
+</p>
+
+
+<h2>Buy Antivirus online.</h2>
+<hr/>
+
+<form>
+
+
+<p><input type="checkbox" onclick="choice(50)"/>
+<label>Antivirus version 1.2</label>
+<br />
+
+
+
+<input type="checkbox" onclick="choice(100)"/>
+<label>Antivirus version 1.4</label><br />
+
+
+<input type="checkbox" onclick="choice(150)"/>
+<label>
+Antivirus version 1.6</label>
+
+</p>
+
+</form>
+
+
+</body>
+
+
+</html>
