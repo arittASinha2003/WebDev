@@ -1,0 +1,89 @@
+<html>
+
+<body onload="func1()">
+
+<h2>This example demonstrates how to assign events.</h2>
+
+<hr/>
+
+Enter your name(in CAPS): 
+
+<input type="text" id="fname" onfocus="func3()" onchange="func2()"/>
+ 
+<br>
+<input type="text" id="fnamee" onblur="func4()"/>
+
+<br>
+
+<a id="second" onclick="func5()"/>Click me.</a>
+<br>
+<p id="third" onmousedown="func6()" onmouseup="func7()">Click me to check.</p>
+
+
+<script>
+
+
+function func1() 
+{
+    
+alert("Page is loaded");
+
+}
+
+
+
+function func2() 
+{
+    
+var x = document.getElementById("fname").value;
+    
+x = x.toLowerCase();
+
+document.getElementById("fname").value=x;
+}
+
+
+function func3() 
+{
+  
+  document.getElementById("fname").style.backgroundColor="red";
+
+}
+
+function func4() 
+{
+    
+alert("Input field lost focus.");
+
+}
+
+
+
+
+function func5() 
+{
+    
+document.getElementById("second").style.color = "red";
+
+}
+
+
+function func6() 
+{
+    
+document.getElementById("third").style.backgroundColor = "blue";
+
+}
+
+
+function func7() 
+{
+    
+document.getElementById("third").style.backgroundColor = "yellow";
+
+}
+
+</script>
+
+</body>
+</html>
