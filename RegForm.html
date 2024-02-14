@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <label>Firstname: <input type="text" name="firstname"></label><br>
+            <label>Lastname: <input type="text" name="lastname"></label><br>
+            <p>Age Category: <br>
+                <label><input type="radio" name="age" value="Under 20">Under 20</label><br>
+                <label><input type="radio" name="age" value="21-35">21-35</label><br>
+                <label><input type="radio" name="age" value="35 Above">35 Above</label><br>
+            </p>
+            <p>Courses Preferred: <br>
+                <label><input type="checkbox" name="course" value="Web Development">Web Development</label><br>
+                <label><input type="checkbox" name="course" value="Cyber Security">Cyber Security</label><br>
+                <label><input type="checkbox" name="course" value="Python">Python</label><br>
+                <label><input type="checkbox" name="course" value="C">C</label><br>
+                <label><input type="checkbox" name="course" value="Java">Java</label><br>
+            </p>
+            <p><label>Choose a branch:</label><br>
+                <select name="Branch">
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+            </select></p>
+            <p><label>Description:</label><br>
+                <textarea rows="4" cols="50" name="description"></textarea>
+            </p>
+            <p><button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </body>
+</html>
