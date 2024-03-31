@@ -689,7 +689,7 @@
 		<div class="contact-content"> 
 			<div class="contact-form-container"> 
 				<h1 class="greet-heading">Get In Touch</h1> 
-				<form class="contact-form"> 
+				<form class="contact-form" action="Result.html"> 
 					<input class="form-controls" type="text" placeholder="Your Name"> 
 					<input class="form-controls" type="text" placeholder="Your Email"> 
 					<input class="form-controls" type="text" placeholder="Your Phone"> 
@@ -767,6 +767,24 @@
             window.location.href = 'https://www.dropbox.com/scl/fi/odv7xgq2zo1dor40ekobh/AR-Resume.pdf?rlkey=buum6njektoy3pbe3lcvyrxl0&dl=1';
             alert("Downloading Resume...");
         });
+		// Smooth Scroll Function
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const offset = 100; // Adjust this value as needed
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+        // Till Here
 	    const hamburger = document.getElementById('hamburger'); 
         const menu = document.querySelector('.menu'); 
 
