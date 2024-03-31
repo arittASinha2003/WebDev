@@ -762,6 +762,11 @@
 
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity= "sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 	<script>
+		const getResumeBtn = document.querySelector('.ghost-btn');
+        getResumeBtn.addEventListener('click', function() {
+            window.location.href = 'https://www.dropbox.com/scl/fi/odv7xgq2zo1dor40ekobh/AR-Resume.pdf?rlkey=buum6njektoy3pbe3lcvyrxl0&dl=1';
+            alert("Downloading Resume...");
+        });
 	    const hamburger = document.getElementById('hamburger'); 
         const menu = document.querySelector('.menu'); 
 
