@@ -1,0 +1,81 @@
+
+<html>
+<head>
+<h2>Example for Event handling with text boxes</h2>
+
+
+<script>
+
+
+
+function totalstr()
+
+{
+
+
+var boys=parseInt(document.getElementById("boys").value);
+
+var girls=parseInt(document.getElementById("girls").value);
+
+var absc=document.getElementById("absc").value;
+
+var res=boys+girls-absc;
+
+document.getElementById("tot").value = res; 
+
+}
+
+
+
+</script>
+</head>
+
+
+<body>
+
+<h2>Calcute strength</h2>
+<hr/>
+
+
+<form>
+
+
+<p>
+Girls strength
+<input type="text" id="girls" size="5" >
+</p>
+
+
+<p>
+Boys strength
+<input type="text" id="boys" size="5" >
+</p>
+
+
+<p>
+Absenties
+<input type="text" id="absc" size="5" >
+</p>
+
+
+<p>
+
+<input type="button" value="total" onclick="totalstr();">
+
+<input type="reset">
+<br/>
+
+TotalStrength:
+<input type="text" size="5" id="tot">
+
+
+</p>
+
+</form>
+
+</body>
+
+</html>
+
+
+  
