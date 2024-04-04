@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="books.xsd">
+    <book id="bk101">
+        <author>Gambardella, Matthew</author>
+        <title>XML Developer's Guide</title>
+        <genre>Computer</genre>
+        <price>44.95</price>
+        <publish_date>2000-10-01</publish_date>
+        <description>An in-depth look at creating applications with XML.</description>
+    </book>
+    <book id="bk102">
+        <author>Smith, John</author>
+        <title>Data Structures and Algorithms</title>
+        <genre>Computer</genre>
+        <price>39.95</price>
+        <publish_date>2001-07-12</publish_date>
+        <description>A comprehensive guide to data structures and algorithms.</description>
+    </book>
+    <book id="bk103">
+        <author>Doe, Jane</author>
+        <title>Introduction to Machine Learning</title>
+        <genre>Computer</genre>
+        <price>29.99</price>
+        <publish_date>2020-01-01</publish_date>
+        <description>An introductory text for students new to machine learning.</description>
+    </book>
+    <book id="bk104">
+        <author>Johnson, James</author>
+        <title>Advanced Python Programming</title>
+        <genre>Computer</genre>
+        <price>49.99</price>
+        <publish_date>2019-11-01</publish_date>
+        <description>A book for experienced Python programmers looking to level up their skills.</description>
+    </book>
+    <book id="bk105">
+        <author>Williams, William</author>
+        <title>Understanding Databases</title>
+        <genre>Computer</genre>
+        <price>59.99</price>
+        <publish_date>2018-06-15</publish_date>
+        <description>A deep dive into the world of databases and SQL.</description>
+    </book>
+</catalog>
